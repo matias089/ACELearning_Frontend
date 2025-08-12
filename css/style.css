@@ -1,3 +1,5 @@
+
+
 /*///////////////////////// Estilos generales /////////////////////////*/
 body, html{
 	margin: 0;
@@ -585,4 +587,22 @@ body, html{
 
 @media (min-width: 1200px) {
     
+}
+
+.tile-caption {
+    display: flex;
+    justify-content: center;   
+    align-items: center;      
+    height: 150px;              
+    text-align: left;        
+    padding: 10px;              
+    box-sizing: border-box;
+    overflow-wrap: break-word; 
+    flex-direction: column;     
+}
+
+.tile-caption span {
+    font-size: 18px;            
+    font-weight: bold;
+    line-height: 1.3;  
 }
