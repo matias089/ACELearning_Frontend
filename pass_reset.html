@@ -89,7 +89,7 @@
             </ul>   
         </div>
 
-               <!-- Notifications area -->
+                <!-- Notifications area -->
         <section class="z-depth-3 NotificationArea">
             <div class="full-width center-align NotificationArea-title">Notificaciones <i class="zmdi zmdi-close btn-Notification"></i></div>
             <a href="#" class="waves-effect Notification">
@@ -148,74 +148,44 @@
                 </div>
             </a>  
         </section>
+        
 
-        <!--Input fields-->
   <div class="container">
     <div class="row">
-      <h3 class="center-align">Mi perfil</h3>
+      <h3 class="center-align">Cambiar Clave</h3>
       <form class="col s12">
         <div class="row">
-          <div class="input-field col s6">
-            <input disabled value="21511918-1" id="rut" type="text" class="validate">
-            <label for="rut">RUT</label>
-          </div>
-          <div class="input-field col s6">
-            <input value="matias padilla" id="nombre" type="text" class="validate">
-            <label for="nombre">Nombre</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s6">
-            <input value="matias089xd@gmail.com" id="correo" type="email" class="validate">
-            <label for="correo">Correo</label>
-          </div>
-          <div class="input-field col s6">
-            <input disabled value="nevada" id="empresa" type="text" class="validate">
-            <label for="empresa">Empresa</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s6">
-            <input disabled value="informatico" id="area" type="text" class="validate">
-            <label for="area">Área</label>
-          </div>
-          <div class="input-field col s6">
-            <input disabled value="Analista" id="cargo" type="text" class="validate">
-            <label for="cargo">Cargo</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s6">
-            <input disabled value="Administrador" id="tipo_usuario" type="text" class="validate">
-            <label for="tipo_usuario">Tipo de Usuario</label>
-          </div>
-          <div class="input-field col s6">
-            <input disabled value="2025-08-12 20:01:50" id="ultima_conexion" type="text" class="validate">
-            <label for="ultima_conexion">Última conexión</label>
+          <div class="input-field col s12">
+            <input id="clave_actual" type="password" class="validate">
+            <label for="clave_actual">Clave Actual</label>
           </div>
         </div>
 
         <div class="row">
           <div class="input-field col s12">
-            <input disabled value="2025-06-24 03:49:10" id="ultima_clave" type="text" class="validate">
-            <label for="ultima_clave">Última contraseña</label>
+            <input id="nueva_clave" type="password" class="validate">
+            <label for="nueva_clave">Nueva Clave</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="confirmar_clave" type="password" class="validate">
+            <label for="confirmar_clave">Confirmar Nueva Clave</label>
           </div>
         </div>
 
         <div class="row center-align">
           <button class="btn waves-effect waves-light" type="submit" name="action">
-            Actualizar
-            <i class="zmdi zmdi-refresh right"></i>
+            Actualizar Clave
+            <i class="zmdi zmdi-lock-outline right"></i>
           </button>
         </div>
       </form>
     </div>
   </div>
-
-  <!-- Footer -->   
+        
+<!-- Footer -->   
 <footer class="footer-MaterialDark">
   <div class="container">
     <div class="row">
