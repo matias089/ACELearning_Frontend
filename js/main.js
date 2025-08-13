@@ -23,15 +23,15 @@ $(document).ready(function(){
     $('.btn-ExitSystem').on('click', function(e){
         e.preventDefault();
         swal({ 
-            title: "You want out of the system?",   
-            text: "The current session will be closed and will leave the system",   
+            title: "¿Seguro que quieres cerrar sesión?",   
+            text: "La sesión actual se cerrará y volverás al inicio de sesión",   
             type: "warning",   
             showCancelButton: true,   
             confirmButtonColor: "#DD6B55",   
-            confirmButtonText: "Yes",
+            confirmButtonText: "Si",
             animation: "slide-from-top",   
             closeOnConfirm: false,
-            cancelButtonText: "Cancel"
+            cancelButtonText: "Cancelar"
         }, function(){   
             window.location='index.html'; 
         });
@@ -39,21 +39,21 @@ $(document).ready(function(){
     $('.btn-Search').on('click', function(e){
         e.preventDefault();
         swal({   
-            title: "What are you looking for?",   
-            text: "Write what you want",   
+            title: "¿Qué estás buscando?",   
+            text: "Escribe el nombre de lo que buscas",   
             type: "input",   
             showCancelButton: true,   
             closeOnConfirm: false,   
             animation: "slide-from-top",   
-            inputPlaceholder: "Write here",
-            confirmButtonText: "Search",
-            cancelButtonText: "Cancel" 
+            inputPlaceholder: "Escribre aquí",
+            confirmButtonText: "Buscar",
+            cancelButtonText: "Cancelar" 
         }, function(inputValue){   
             if (inputValue === false) return false;      
-            if (inputValue === "") {     swal.showInputError("You must write something");     
+            if (inputValue === "") {     swal.showInputError("Debes escribir algo");     
             return false   
             }      
-            swal("Nice!", "You wrote: " + inputValue, "success"); 
+            swal("Genial!", "escribiste: " + inputValue, "Éxito"); 
         });    
     });
     $('.btn-Notification').on('click', function(){
